@@ -1,5 +1,5 @@
 # README
-The PyTorch implementation for $P^2MAM$
+The PyTorch implementation for $IMAM$
 
 ## Environments
 
@@ -18,25 +18,25 @@ We adapted the scripts from [LESSR](https://github.com/twchen/lessr) for the pre
 You can find them in the "preprocess" fold
 
 ## Example
-Please refer to the following example on how to train and evaluate $P^2MAM\text{-}O$, $P^2MAM\text{-}P$ and $P^2MAM\text{-}O\text{-}P$ on Diginetica. 
+Please refer to the following example on how to train and evaluate $IMAM\text{-}O$, $IMAM\text{-}P$ and $IMAM\text{-}O\text{-}P$ on Diginetica. 
 
 Please change the value of "data", and the hyper parameters (e.g., max_len for $n$) as presented in our appendix to reproduce the results on the other datasets.
 
 You are recommended to run the code using GPUs.
 
-$P^2MAM\text{-}O$:
+$IMAM\text{-}O$:
 
 ```
-python run.py --data=digitenica --n_epoch=60 --dim=128 --max_len=10 --isTrain=0 --model=P2MAMO --num_heads=1
+python run.py --data=diginetica --n_epoch=60 --dim=128 --max_len=10 --isTrain=0 --model=P2MAMO --num_heads=1
 ```
 
-$P^2MAM\text{-}P$:
+$IMAM\text{-}P$:
 
 ```
-python run.py --data=digitenica --n_epoch=60 --dim=128 --max_len=10 --isTrain=0 --model=P2MAMP --num_heads=1
+python run.py --data=diginetica --n_epoch=60 --dim=128 --max_len=10 --isTrain=0 --model=P2MAMP --num_heads=1
 ```
 
-$P^2MAM\text{-}O\text{-}P$:
+$IMAM\text{-}O\text{-}P$:
 
 ```
 python run.py --data=diginetica --n_epoch=60 --dim=128 --max_len=15 --isTrain=0 --model=P2MAMOP --num_heads=8
