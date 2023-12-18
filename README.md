@@ -33,7 +33,7 @@ python run.py --data=diginetica --n_epoch=60 --dim=128 --max_len=10 --isTrain=0 
 $IMAM\text{-}P$:
 
 ```
-python run.py --data=digitenica --n_epoch=60 --dim=128 --max_len=10 --isTrain=0 --model=IMAMP --num_heads=1
+python run.py --data=diginetica --n_epoch=60 --dim=128 --max_len=10 --isTrain=0 --model=IMAMP --num_heads=1
 ```
 
 $IMAM\text{-}O\text{-}P$:
