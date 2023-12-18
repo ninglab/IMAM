@@ -70,7 +70,7 @@ class MAM(torch.nn.Module):
             hn, attn = self.dot_product_attention(self.key.unsqueeze(0), seqs, seqs, mask)
             Q = hn
 
-        if self.model == 'P2MAMO' or self.model == 'oracle' or self.model == 'mean':
+        if self.model == 'IMAMO' or self.model == 'oracle' or self.model == 'mean':
             return Q, hn, attn, 0.0
 
         seqs = torch.transpose(seqs, 0, 1)
@@ -79,9 +79,9 @@ class MAM(torch.nn.Module):
 
         mha_outputs, attn_output_weights = self.attn_layer(Q, seqs, seqs, key_padding_mask=~mask)
 
-        if self.model == 'P2MAMOP':
+        if self.model == 'IMAMOP':
             Q = Q + mha_outputs
-        elif self.model == 'P2MAMP':
+        elif self.model == 'IMAMP':
             Q = mha_outputs
 
         Q = torch.transpose(Q, 0, 1)
