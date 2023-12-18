@@ -27,17 +27,17 @@ You are recommended to run the code using GPUs.
 $IMAM\text{-}O$:
 
 ```
-python run.py --data=diginetica --n_epoch=60 --dim=128 --max_len=10 --isTrain=0 --model=P2MAMO --num_heads=1
+python run.py --data=diginetica --n_epoch=60 --dim=128 --max_len=10 --isTrain=0 --model=IMAMO --num_heads=1
 ```
 
 $IMAM\text{-}P$:
 
 ```
-python run.py --data=digitenica --n_epoch=60 --dim=128 --max_len=10 --isTrain=0 --model=P2MAMP --num_heads=1
+python run.py --data=digitenica --n_epoch=60 --dim=128 --max_len=10 --isTrain=0 --model=IMAMP --num_heads=1
 ```
 
 $IMAM\text{-}O\text{-}P$:
 
 ```
-python run.py --data=diginetica --n_epoch=60 --dim=128 --max_len=15 --isTrain=0 --model=P2MAMOP --num_heads=8
+python run.py --data=diginetica --n_epoch=60 --dim=128 --max_len=15 --isTrain=0 --model=IMAMOP --num_heads=8
 ```
